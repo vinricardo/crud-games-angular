@@ -1,0 +1,25 @@
+<section class="mt-5">
+  <div class="w-100">
+    <h2 class="text-white text-left ml-5 pl-5 mb-5">Lista de Jogos</h2>
+  </div>
+  <ngx-slick-carousel class="carousel"
+                        [config]="slideConfig">
+          <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <app-card-model [config]="slide"></app-card-model>
+          </div>
+    </ngx-slick-carousel>
+<section class="mt-5">
+  <app-add-game></app-add-game>
+</section>
+<section class="mt-5">
+  <app-edit-game></app-edit-game>
+</section>
+<section class="mt-5 mb-5">
+  <app-delete-game></app-delete-game>
+</section>
+<div class="row justify-content-end mb-2" style="margin: 0 auto 0; width: 80%;">
+  <div class="circle-one"></div>
+  <div class="circle-one ml-3"></div>
+</div>
+<router-outlet></router-outlet>
+</section>

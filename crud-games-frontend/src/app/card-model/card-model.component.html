@@ -1,0 +1,12 @@
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title text-white text-center">{{config.title}}</h5>
+    <p class="card-title text-white text-center">{{config.genre}}</p>
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" data-percentage="100"   aria-valuenow="config.rating" aria-valuemin="0" aria-valuemax="100" [style.width]="config.rating + '%'"
+      [ngClass] = "config.rating>=60 ? 'progress-bar bg-success' :
+       (config.rating<60 && config.rating>41 ? 'progress-bar bg-warning text-dark' : 'progress-bar bg-danger' )"
+      >{{config.rating}}%</div>
+    </div>
+  </div>
+</div>

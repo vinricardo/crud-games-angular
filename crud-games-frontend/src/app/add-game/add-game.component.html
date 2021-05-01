@@ -1,0 +1,25 @@
+<section class="row justify-content-center">
+  <div class="w-100">
+    <h2 class="text-white text-right mr-5 pr-5 mb-5">Adicionar Jogo</h2>
+  </div>
+<div class="card col-8">
+  <form [formGroup]="form">
+    <div class="input-group d-flex justify-content-around mt-5">
+      <div class="col-5 mb-4">
+        <input type="text" class="form-control " placeholder="Digite o título do jogo" formControlName="title">
+      </div>
+      <div class="col-5 mb-4">
+        <input type="text" class="form-control " placeholder="Digite o gênero do jogo" formControlName="genre">
+      </div>
+      <div class="col-5 ml-n2">
+        <input type="number" class="form-control " placeholder="Digite a classificação do jogo" formControlName="rating">
+      </div>
+      <div class="col-5 row justify-content-end">
+        <div class="col-5 ">
+          <button class="btn btn-success" (click)="addGame()" [disabled]="form.invalid">ENVIAR</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+</section>

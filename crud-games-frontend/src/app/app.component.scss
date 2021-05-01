@@ -1,0 +1,15 @@
+.carousel {
+  width: 50% !important;
+  margin: 0 auto 0;
+}
+
+::ng-deep .slide {
+  justify-content: center;
+}
+
+.circle-one {
+  background-color: #c4c4c4;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
